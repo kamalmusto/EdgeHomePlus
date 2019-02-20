@@ -11,5 +11,16 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-   .sass('resources/sass/app.scss', 'public/css');
+mix
+    .styles([
+        'resources/css/bootstrap.css',
+        'resources/css/all.css',
+        'resources/css/bttn.min.css'
+    ],'./public/css/app.css')
+    .sass('resources/sass/app.scss', 'public/css')
+    .js([
+        'resources/js/jquery-3.3.1.min.js',
+        'resources/js/all.js',
+        'resources/js/bootstrap.js',
+        'resources/js/jquery.nicescroll.js'
+    ],'./public/js/app.js');
