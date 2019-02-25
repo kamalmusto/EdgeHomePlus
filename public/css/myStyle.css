@@ -1,0 +1,33 @@
+body{
+    background: #EEEEEE;
+    height: 10000000px;
+}
+.mybg-dark{
+    background: rgba(34,25,47,0.5);
+}
+.carousel div img{
+    max-height: 550px;
+}
+.myBox{
+   max-width: 270px;
+    border-radius: 1%;
+    padding: 20px;
+    border:1px #a0becc solid;
+    display: inline-block;
+
+}
+.myimg{
+    width: 80%;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 2%;
+}
+.base-color-title{
+    color: #192855;
+    font-weight: bolder;
+}
+.myBox .badge{
+    padding: 5%;
+}
