@@ -114,7 +114,7 @@
                         <img src="{{asset('images/persons/Dr.mariam.jpg')}}" alt="Speaker 1" class="img-fluid">
                         <div class="details">
                             <h3><a href=""> Dr.Mariam Saii </a></h3>
-                            <p>Quas alias incidunt</p>
+
                             <div class="social">
                                 <a href="https://www.facebook.com/mariam.m.saii"><i class="fa fa-twitter"></i></a>
                                 <a href="https://www.facebook.com/mariam.m.saii"><i class="fa fa-facebook"></i></a>

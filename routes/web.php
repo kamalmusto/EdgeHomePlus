@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('theme');
 });
+Route::get('/admin', function () {
+    return view('admin.layouts.AdminBase');
+});
