@@ -27,28 +27,14 @@
     <!-- Main Stylesheet File -->
     <link href="{{asset('css/style.css')}}" rel="stylesheet">
 
-    <!-- =======================================================
-      Theme Name: TheEvent
-      Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
-      Author: BootstrapMade.com
-      License: https://bootstrapmade.com/license/
-    ======================================================= -->
 </head>
 
 <body>
-
-<!--==========================
-  Header
-============================-->
 <header id="header">
     <div class="container">
-
         <div id="logo" class="pull-left">
-            <!-- Uncomment below if you prefer to use a text logo -->
-            <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
             <a href="#intro" class="scrollto"><img src="{{asset('images/img/logo.png')}}" alt="" title=""></a>
         </div>
-
         <nav id="nav-menu-container">
             <ul class="nav-menu">
                 <li class="menu-active"><a href="#intro">Home</a></li>
@@ -59,13 +45,10 @@
                 <li><a href="#contact">Contact</a></li>
                 <li class="buy-tickets"><a href="#buy-tickets">Log In</a></li>
             </ul>
-        </nav><!-- #nav-menu-container -->
+        </nav>
     </div>
-</header><!-- #header -->
+</header>
 
-<!--==========================
-  Intro Section
-============================-->
 <section id="intro">
     <div class="intro-container wow fadeIn">
         <h1 class="mb-4 pb-0">The <span>EdgeHome+</span> Project</h1>
@@ -179,24 +162,16 @@
             </div>
         </div>
     </section>
-
-    <!--==========================
-      Venue Section
-    ============================-->
     <section id="venue" class="wow fadeInUp">
-
         <div class="container-fluid">
-
             <div class="section-header">
                 <h2>EdgeHome+ At</h2>
                 <p></p>
             </div>
-
             <div class="row no-gutters">
                 <div class="col-lg-6 venue-map">
                     <iframe src="https://www.google.com/maps/place/Tishreen+University/@35.5229125,35.8072654,16z/data=!4m5!3m4!1s0x1526ac18a2d4d5cd:0x3dc7dc57373f03b4!8m2!3d35.5226303!4d35.8072905" style="border:0" allowfullscreen></iframe>
                 </div>
-
                 <div class="col-lg-6 venue-info">
                     <div class="row justify-content-center">
                         <div class="col-11 col-lg-8">
@@ -208,19 +183,13 @@
             </div>
         </div>
     </section>
-
-    <!--==========================
-      Gallery Section
-    ============================-->
     <section id="gallery" class="wow fadeInUp">
-
         <div class="container">
             <div class="section-header">
                 <h2>Gallery</h2>
                 <p></p>
             </div>
         </div>
-
         <div class="owl-carousel gallery-carousel">
             <a href="{{asset('images/img/gallery/1.jpg')}}" class="venobox" data-gall="gallery-carousel"><img src="images/img/gallery/1.jpg" alt=""></a>
             <a href="{{asset('images/img/gallery/2.jpg')}}" class="venobox" data-gall="gallery-carousel"><img src="images/img/gallery/2.jpg" alt=""></a>
@@ -233,21 +202,10 @@
         </div>
 
     </section>
-
-
-    <!--==========================
-      Subscribe Section
-    ============================-->
     <section id="subscribe">
         <div class="container wow fadeInUp">
-
-
         </div>
     </section>
-
-    <!--==========================
-      Buy Ticket Section
-    ============================-->
     <section id="buy-tickets" class="section-with-bg wow fadeInUp">
         <div class="container">
 
