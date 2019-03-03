@@ -39,8 +39,8 @@
             <ul class="nav-menu">
                 <li class="menu-active"><a href="#intro">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#speakers">Our Team</a></li>
-                <li><a href="#venue">Place</a></li>
+                <li><a href="#our-team">Our Team</a></li>
+                <li><a href="#Place">Place</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li class="buy-tickets"><a href="#buy-tickets">Log In</a></li>
@@ -84,7 +84,7 @@
     </section>
 
     <!--==========================
-      Speakers Section
+      our-team Section
     ============================-->
     <section id="our-team" class="wow fadeInUp">
         <div class="container">
@@ -162,7 +162,7 @@
             </div>
         </div>
     </section>
-    <section id="venue" class="wow fadeInUp">
+    <section id="Place" class="wow fadeInUp">
         <div class="container-fluid">
             <div class="section-header">
                 <h2>EdgeHome+ At</h2>
@@ -218,34 +218,19 @@
                 <div class="col-lg-4">
                     <div class="card mb-5 mb-lg-0">
                         <div class="card-body">
-                            <h2 class="section-header text-center">Full Control</h2>
+                            <h3 class="section-header text-center">Full Control</h3>
                             <hr>
-                            <ul class="fa-ul">
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span></li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span></li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
-                            </ul>
-                            <hr>
-                            <div class="text-center">
-                                <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="standard-access">Buy Now</button>
-                            </div>
+                            <p class="text-center overflow-hidden">You can control of any electronics device in your home</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="card mb-5 mb-lg-0">
                         <div class="card-body">
-                            <h2 class="section-header text-center">Alert System</h2>
+                            <h3 class="section-header text-center">Alert System</h3>
                             <hr>
-                            <ul class="fa-ul">
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span></li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span></li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
-                            </ul>
-                            <hr>
-                            <div class="text-center">
-                                <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="pro-access">Buy Now</button>
-                            </div>
+                            <p class="text-center ">Send alert to your email if had occured any error in your home</p>
+
                         </div>
                     </div>
                 </div>
@@ -253,17 +238,9 @@
                 <div class="col-lg-4">
                     <div class="card">
                         <div class="card-body">
-                            <h2 class="section-header text-center">Security System</h2>
+                            <h3 class="section-header text-center">Security System</h3>
                             <hr>
-                            <ul class="fa-ul">
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span></li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span></li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
-                            </ul>
-                            <hr>
-                            <div class="text-center">
-                                <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="premium-access">Buy Now</button>
-                            </div>
+                            <p class="text-center ">you can protect your home from any stale you can watch status home</p>
 
                         </div>
                     </div>
@@ -374,27 +351,20 @@
                     <div class="text-center"><button type="submit">Send Message</button></div>
                 </form>
             </div>
-
         </div>
-    </section><!-- #contact -->
-
+    </section>
 </main>
-
-
-<!--==========================
-  Footer
-============================-->
 <footer id="footer">
     <div class="footer-top">
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-3 col-md-6 footer-info">
+                <div class="col-lg-4 col-md-6 footer-info">
                     <img src="images/img/logo.png" alt="EdgeHome+">
                     <p>Our project is a student project whose aim is to show how the Internet can be used to control and secure our homes</p>
                 </div>
 
-                <div class="col-lg-3 col-md-6 footer-links">
+                <div class="col-lg-4 col-md-6 footer-links">
                     <h4>Useful Links</h4>
                     <ul>
                         <li><i class="fa fa-angle-right"></i> <a href="#">Home</a></li>
@@ -404,19 +374,7 @@
                         <li><i class="fa fa-angle-right"></i> <a href="#">Privacy policy</a></li>
                     </ul>
                 </div>
-
-                <div class="col-lg-3 col-md-6 footer-links">
-                    <h4>Useful Links</h4>
-                    <ul>
-                        <li><i class="fa fa-angle-right"></i> <a href="#">Home</a></li>
-                        <li><i class="fa fa-angle-right"></i> <a href="#">About us</a></li>
-                        <li><i class="fa fa-angle-right"></i> <a href="#">Services</a></li>
-                        <li><i class="fa fa-angle-right"></i> <a href="#">Terms of service</a></li>
-                        <li><i class="fa fa-angle-right"></i> <a href="#">Privacy policy</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-6 footer-contact">
+                <div class="col-lg-4 col-md-6 footer-contact">
                     <h4>Contact Us</h4>
                     <p>
                         Martakla <br>
@@ -427,7 +385,6 @@
                     </p>
 
                     <div class="social-links">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                         <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
                         <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
                         <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>

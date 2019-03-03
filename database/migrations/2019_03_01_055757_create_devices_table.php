@@ -22,7 +22,7 @@ class CreateDevicesTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('type');
-            $table->integer('room_id');
+            $table->integer('room_id')->unsigned();
             $table->foreign('room_id')->references('id')->on('rooms')->onDelete('cascade');
             $table->timestamps();
         });
