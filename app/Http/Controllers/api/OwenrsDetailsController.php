@@ -14,7 +14,7 @@ class OwenrsDetailsController extends Controller
      */
     public function index()
     {
-        //
+
     }
 
     /**

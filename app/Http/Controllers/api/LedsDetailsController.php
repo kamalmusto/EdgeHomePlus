@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\api;
 
 use Illuminate\Http\Request;
+use App\ledDetails;
 use App\Http\Controllers\Controller;
+use App\Http\Resources\ledDetails as ledDetailsResource;
 
 class LedsDetailsController extends Controller
 {
@@ -46,7 +48,13 @@ class LedsDetailsController extends Controller
      */
     public function show($id)
     {
-        //
+        try {
+            $led = ledDetails::findOrFail($id);
+            return new ledDetailsResource($led);
+        }
+        catch (\Exception $ex ) {
+                return response('id is not correct',404);
+            }
     }
 
     /**

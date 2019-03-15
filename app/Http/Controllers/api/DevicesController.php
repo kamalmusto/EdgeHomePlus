@@ -1,9 +1,19 @@
 <?php
 
 namespace App\Http\Controllers\api;
-
+use App\dht11Details;
+use App\Http\Requests\updateDeviceRequest;
 use Illuminate\Http\Request;
+use Illuminate\Database\Eloquent\Model;
 use App\Http\Controllers\Controller;
+use App\device;
+use App\ledDetails;
+use App\flameDetails;
+use App\Http\Resources\device as deviceResource;
+use App\Http\Resources\flameDetails as flameDetailsResource;
+use App\Http\Resources\dht11Details as dht11DetailsResource;
+use App\Http\Resources\ledDetails as ledDetailsResource;
+
 
 class DevicesController extends Controller
 {
@@ -14,7 +24,8 @@ class DevicesController extends Controller
      */
     public function index()
     {
-        //
+        $allDevices = device::all()->load(['room']);
+        return deviceResource::collection($allDevices);
     }
 
     /**
@@ -46,7 +57,7 @@ class DevicesController extends Controller
      */
     public function show($id)
     {
-        //
+
     }
 
     /**
@@ -69,7 +80,31 @@ class DevicesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $device = device::findOrFail($id);
+        $type = $device->type;
+        if ($type == 'leds') {
+            $data = ledDetails::findOrFail($id)->load('device');
+            $data->is_active = $request->is_active;
+            $data->status = $request->status;
+            $data->saveOrfail();
+            return new ledDetailsResource($data);
+        }
+        if ($type == 'dht') {
+            $data = dht11Details::findOrFail($id)->load('device');
+            $data->temp = $request->temp;
+            $data->hum = $request->hum;
+            $data->is_active = $request->is_active;
+            $data->saveOrfail();
+            return new dht11DetailsResource($data);
+        }
+        if ($type == 'flame') {
+            $data = flameDetails::findOrFail($id)->load('device');
+            $data->is_active = $request->is_active;
+            $data->value = $request->value;
+            $data->saveOrfail();
+            return new flameDetailsResource($data);
+        }
+
     }
 
     /**
@@ -81,5 +116,30 @@ class DevicesController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    /**
+     * @param $id
+     * @param $type
+     * @return device and details
+     */
+    public  function  getDetails($id,$type){
+        try {
+            if ($type == 'leds') {
+                $data = ledDetails::findOrFail($id)->load('device');
+                return new ledDetailsResource($data);
+            }
+            if ($type == 'dht') {
+                $data = dht11Details::findOrFail($id)->load('device');
+                return new dht11DetailsResource($data);
+            }
+            if ($type == 'flame') {
+                $data = flameDetails::findOrFail($id)->load('device');
+                return new flameDetailsResource($data);
+            }
+        }
+        catch (\Exception $exception){
+            return response($exception->getMessage(),'404');
+        }
     }
 }

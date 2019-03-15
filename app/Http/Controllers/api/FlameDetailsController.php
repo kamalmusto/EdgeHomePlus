@@ -4,7 +4,8 @@ namespace App\Http\Controllers\api;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
+use App\flameDetails;
+use  App\Http\Resources\flameDetails as flameDetailsResource;
 class FlameDetailsController extends Controller
 {
     /**
@@ -46,7 +47,15 @@ class FlameDetailsController extends Controller
      */
     public function show($id)
     {
-        //
+        try
+        {
+        $data =flameDetails::findOrFail($id);
+        return new flameDetailsResource($data);
+        }
+        catch (\Exception $ex )
+        {
+        return response('id is not correct',404);
+        }
     }
 
     /**

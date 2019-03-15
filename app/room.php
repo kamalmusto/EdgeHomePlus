@@ -6,5 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class room extends Model
 {
-    //
+    public  function  devices(){
+      return  $this->hasMany('App\device');
+    }
 }

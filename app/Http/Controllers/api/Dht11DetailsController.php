@@ -4,6 +4,8 @@ namespace App\Http\Controllers\api;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\dht11Details;
+use App\Http\Resources\dht11Details as dht11DetailsResource;
 
 class Dht11DetailsController extends Controller
 {
@@ -46,7 +48,15 @@ class Dht11DetailsController extends Controller
      */
     public function show($id)
     {
-        //
+        try
+            {
+            $data = dht11Details::findOrFail($id);
+            return new dht11DetailsResource($data);
+            }
+        catch (\Exception $ex )
+            {
+                return response('id is not correct',404);
+            }
     }
 
     /**
