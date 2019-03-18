@@ -65,7 +65,7 @@
                         </li>
                     </ul>
                 </nav>
-                <!-- End Sidebar navigation -->
+                <!-- End Sidebar      navigation -->
             </div>
         </aside>
         <div class="page-wrapper">

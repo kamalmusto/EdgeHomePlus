@@ -1,3 +1,4 @@
+
 <footer class="footer text-center">
     All Rights Reserved by  Designed and Developed by <a href="https://wrappixel.com">RandomByte</a>.
 </footer>
