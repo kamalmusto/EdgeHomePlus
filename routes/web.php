@@ -15,5 +15,9 @@ Route::get('/', function () {
     return view('theme');
 });
 Route::get('/admin', function () {
-    return view('admin.dashboard.dashborad');
+
+    return view('admin.dash2');
 });
+Route::get('/admin/rooms/homedoor', function () {
+    return view('admin.rooms.homeDoor');
+})->name('homeDoor');
