@@ -85,8 +85,8 @@
     </aside>
 @yield('content')
 </div>
-<footer class="footer text-center">
-    All Rights Reserved by  Designed and Developed by <a href="https://.com">RandomByte</a>.
+<footer class="footer text-center  text-white" style="background-color: #1f262d">
+    All Rights Reserved by  Designed and Developed by <a href="https://.com" style="color: #f82249">RandomByte</a>.
 </footer>
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

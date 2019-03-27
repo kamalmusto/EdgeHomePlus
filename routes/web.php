@@ -14,8 +14,5 @@
 Route::get('/', function () {
     return view('theme');
 });
-Route::get('/admin', function () {
 
-    return view('admin.dash2');
-});
-Route::get('/admin/rooms','RoomsController@index')->name('room.index');
+Route::get('/admin','RoomsController@index')->name('room.index');

@@ -6,11 +6,9 @@
     border-bottom-style:solid ;
 
     color:#ffffff;
-    border-top-left-radius: 2%;
 }
 .roomBody{
     padding: 1%;
-    text-align: center;
 
 }
 /*values from sensors*/

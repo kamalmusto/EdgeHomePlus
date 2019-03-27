@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Door;
 use Illuminate\Http\Request;
-use App\dht11Details;
-use App\flameDetails;
-use App\ledDetails;
-use App\room;
+use App\Dht;
+use App\Flame;
+use App\Led;
+use App\Room;
 use phpDocumentor\Reflection\Types\Array_;
 
 class RoomsController extends Controller
@@ -18,15 +19,15 @@ class RoomsController extends Controller
      */
     public function index()
     {
-        $rooms = room::all();
+        $rooms = Room::all();
 
-        foreach ($rooms as $room) {
 
-            $dhts = dht11Details::where('room_id',$room->id)->get();
-            $leds = ledDetails::where('room_id',$room->id)->get();
-            $flames = flameDetails::where('room_id',$room->id)->get();
-        }
-        return view('admin.dash2',compact('rooms','dhts','leds','flames'));
+            $dhts = Dht::all()->load('room');
+            $leds = Led::all()->load('room');
+            $flames = Flame::all()->load('room');
+            $doors = Door::all()->load('room');
+        return view('admin.dash2',compact('rooms','dhts','leds','flames','doors'));
+
     }
 
     /**

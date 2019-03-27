@@ -17,14 +17,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::Resource('room','api\RoomsController');
-Route::Resource('dht','api\Dht11DetailsController');
-Route::Resource('device','api\DevicesController');
-Route::Resource('flame','api\FlameDetailsController');
-Route::Resource('led','api\LedsDetailsController');
-Route::Resource('pir','api\PirDetailsController');
-Route::Resource('system','api\HomeSystemController');
-Route::Resource('owner','api\OwenrsDetailsController');
-/*
- * route devices
- */
-Route::get('device/{id}/{type}','api\DevicesController@getDetails')->name('device.get');
+Route::Resource('dht','api\DhtController');
+Route::Resource('flame','api\FlamesController');
+Route::Resource('led','api\LedController');
+Route::Resource('door','api\DoorController');

@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Http\Controllers\api;
-use  App\room;
-use App\Http\Resources\room as roomResource;
+use  App\Room;
+use App\Http\Resources\RoomResource;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -15,8 +15,8 @@ class RoomsController extends Controller
      */
     public function index()
     {
-        $allRooms = room::all()->load('devices');
-        return roomResource::collection($allRooms);
+        $allRooms = Room::all()->load('leds','dhts','doors','flames');
+        return RoomResource::collection($allRooms);
     }
 
     /**

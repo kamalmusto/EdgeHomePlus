@@ -1,5 +1,6 @@
 @extends('admin.layouts.AdminBase')
 @section('styles')
+    <link rel="stylesheet" href="{{asset('css/bttn.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/homeStyle.css')}}">
 @endsection
 @section('content')
@@ -71,25 +72,85 @@
                 <!-- Column -->
             </div>
             <!-- Rooms new Row -->
-            <div class="row roomsRow">
-                @foreach($rooms as $room)
+            <div class="row roomsRow text-left">
                     <div class= "col-md-6 col-sm-12 " >
                         <div class="homeRoom">
-                            <div class="roomName"> {{$room->name}}</div>
+                            <div class="roomName"> <h3 class="text-center">Lights</h3></div>
                             <div class="roomBody">
-                                <ul class="list-style-none">
-                                    <li><h5>Lights</h5>
-                                    @foreach($leds as $led)
-                                        <li class="ml-2"> {{$led->status}}</li>
-                                    @endforeach
-                                </ul>
-                            @foreach($flames as $flame)
-                            @endforeach
+                                    <table class="table table-hover">
+                                           <thead class="bg-dark text-white">
+                                                <tr>
+                                                    <th>Room</th>
+                                                    <th>Status</th>
+                                                    <th>Control</th>
+                                                </tr>
+                                           </thead>
+                                           <tbody>
+                                           @foreach($leds as $led)
+                                                <tr>
+                                                    <td>{{$led->room->name}} </td>
+                                                    <td>{{$led->status}}</td>
+                                                    <td><button  class="bttn-jelly bttn-sm bttn-danger mr-2">OFF</button>
+                                                        <button class="bttn-jelly bttn-sm bttn-success">ON</button>
+                                                    </td>
+                                                </tr>
+                                           @endforeach
+                                           </tbody>
+                                        </table>
                             </div>
+                        </div></div>
+                <div class= "col-md-6 col-sm-12 " >
+                    <div class="homeRoom">
+                        <div class="roomName"> <h3 class="text-center">Door</h3></div>
+                        <div class="roomBody">
+                            <table class="table table-hover">
+                                <thead class="bg-dark text-white">
+                                <tr>
+                                    <th>Room</th>
+                                    <th>Status</th>
+                                    <th>Controls</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                @foreach($doors as $door)
+                                    <tr>
+                                        <td>{{$door->room->name}}</td>
+                                        <td>{{$door->status}}</td>
+                                        <td><button  class="bttn-jelly bttn-sm bttn-danger mr-2">OFF</button>
+                                            <button class="bttn-jelly bttn-sm bttn-success">ON</button></td>
+                                    </tr>
+                                @endforeach
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                @endforeach
+                </div>
+                <div class= "col-md-6 col-sm-12 " >
+                    <div class="homeRoom">
+                        <div class="roomName"> <h3 class="text-center">Flame</h3></div>
+                        <div class="roomBody">
+                            <table class="table table-hover">
+                                <thead class="bg-dark text-white">
+                                <tr>
+                                    <th>ROOM</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                @foreach($flames as $flame)
+                                    <tr>
+                                        <td>{{$flame->room->name}} </td>
+                                        <td>{{$flame->value}}</td>
+
+                                    </tr>
+                                @endforeach
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             </div>
         </div>
-    </div>
 @endsection

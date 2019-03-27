@@ -6,13 +6,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class room extends Model
 {
-    public  function  ledDetails(){
-      return  $this->hasMany('App\ledDetails');
+    public  function  leds(){
+      return  $this->hasMany('App\Led','room_id','id');
     }
-    public  function  flameDetails(){
-        return  $this->hasMany('App\flameDetails');
+    public  function  flames(){
+        return  $this->hasMany('App\Flame','room_id','id');
     }
-    public  function  dht11Details(){
-        return  $this->hasMany('App\dht11Details');
+    public  function  dhts(){
+        return  $this->hasMany('App\Dht','room_id','id');
+    }
+    public  function  doors(){
+        return  $this->hasMany('App\Door','room_id','id');
     }
 }
