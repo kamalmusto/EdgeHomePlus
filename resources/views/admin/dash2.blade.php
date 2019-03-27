@@ -72,30 +72,23 @@
             </div>
             <!-- Rooms new Row -->
             <div class="row roomsRow">
-                <div class= "col-md-6 col-sm-12 " >
-                    <div class="homeRoom">
-                        <div class="roomName"> test title</div>
-                        <div class="roomBody">test body</div>
+                @foreach($rooms as $room)
+                    <div class= "col-md-6 col-sm-12 " >
+                        <div class="homeRoom">
+                            <div class="roomName"> {{$room->name}}</div>
+                            <div class="roomBody">
+                                <ul class="list-style-none">
+                                    <li><h5>Lights</h5>
+                                    @foreach($leds as $led)
+                                        <li class="ml-2"> {{$led->status}}</li>
+                                    @endforeach
+                                </ul>
+                            @foreach($flames as $flame)
+                            @endforeach
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class= "col-md-6 col-sm-12 " >
-                    <div class="homeRoom">
-                        <div class="roomName"> test title</div>
-                        <div class="roomBody">test body</div>
-                    </div>
-                </div>
-                <div class= "col-md-6 col-sm-12 " >
-                    <div class="homeRoom">
-                        <div class="roomName"> test title</div>
-                        <div class="roomBody">test body</div>
-                    </div>
-                </div>
-                <div class= "col-md-6 col-sm-12 " >
-                    <div class="homeRoom">
-                        <div class="roomName"> test title</div>
-                        <div class="roomBody">test body</div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>

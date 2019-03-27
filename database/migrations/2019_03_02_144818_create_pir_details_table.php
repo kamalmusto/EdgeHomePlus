@@ -15,12 +15,10 @@ class CreatePirDetailsTable extends Migration
     {
         Schema::create('pir_details', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('status')->collation('utf8_general_ci');
+            $table->string('status');
             $table->boolean('is_active');
-            $table->integer('numBin');
-            $table->foreign('id')->references('id')->on('devices')->onDelete('cascade');
+            $table->integer('numBin')->unique();
             $table->timestamps();
-
         });
     }
 

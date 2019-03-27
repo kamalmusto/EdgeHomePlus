@@ -18,6 +18,4 @@ Route::get('/admin', function () {
 
     return view('admin.dash2');
 });
-Route::get('/admin/rooms/homedoor', function () {
-    return view('admin.rooms.homeDoor');
-})->name('homeDoor');
+Route::get('/admin/rooms','RoomsController@index')->name('room.index');

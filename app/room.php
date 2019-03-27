@@ -6,7 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class room extends Model
 {
-    public  function  devices(){
-      return  $this->hasMany('App\device');
+    public  function  ledDetails(){
+      return  $this->hasMany('App\ledDetails');
+    }
+    public  function  flameDetails(){
+        return  $this->hasMany('App\flameDetails');
+    }
+    public  function  dht11Details(){
+        return  $this->hasMany('App\dht11Details');
     }
 }
