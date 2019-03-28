@@ -4,6 +4,8 @@ namespace App\Http\Controllers\api;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Resources\DoorResource;
+use App\Door;
 
 class DoorController extends Controller
 {
@@ -46,7 +48,13 @@ class DoorController extends Controller
      */
     public function show($id)
     {
-        //
+        try{
+            $data = Door::findOrFail($id);
+            return new DoorResource($data);
+        }
+        catch (\Exception $ex){
+            return response($ex->getMessage(),404);
+        }
     }
 
     /**
@@ -69,7 +77,19 @@ class DoorController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        try{
+            $data = Door::findOrFail($id);
+            if($data->password === $request->password){
+                $data->status=$request->status;
+                $data->save();
+                return new DoorResource($data);
+            }
+            throw  new \Exception("the password is not correct");
+
+        }
+        catch (\Exception $ex){
+            return response($ex->getMessage(),404);
+        }
     }
 
     /**

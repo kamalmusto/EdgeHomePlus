@@ -48,7 +48,8 @@ class RoomsController extends Controller
      */
     public function show($id)
     {
-        //
+        $data = Room::findOrFail($id)->load('leds','dhts','doors','flames');
+        return new RoomResource($data);
     }
 
     /**
