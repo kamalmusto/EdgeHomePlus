@@ -8,7 +8,6 @@ use App\Dht;
 use App\Flame;
 use App\Led;
 use App\Room;
-use phpDocumentor\Reflection\Types\Array_;
 
 class RoomsController extends Controller
 {
@@ -19,14 +18,7 @@ class RoomsController extends Controller
      */
     public function index()
     {
-        $rooms = Room::all();
 
-
-            $dhts = Dht::all()->load('room');
-            $leds = Led::all()->load('room');
-            $flames = Flame::all()->load('room');
-            $doors = Door::all()->load('room');
-        return view('admin.dash2',compact('rooms','dhts','leds','flames','doors'));
 
     }
 

@@ -10,9 +10,14 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use \Illuminate\Support\Facades\Route;
+use \Illuminate\Support\Facades\Auth;
+
+
+
+Auth::routes();
 
 Route::get('/', function () {
-    return view('theme');
-});
-
-Route::get('/admin','RoomsController@index')->name('room.index');
+    return view('index');
+})->name('EdgeHome');
+Route::get('/home', 'HomeController@index')->name('home');

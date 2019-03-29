@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class room extends Model
+class Room extends Model
 {
     public  function  leds(){
       return  $this->hasMany('App\Led','room_id','id');
