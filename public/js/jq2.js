@@ -1,29 +1,29 @@
 $(document).ready(function () {
-    $('html').niceScroll();
-    $(document).on('click','a[data-role=onLed]',function () {
+
+    $(document).on('click','button[data-role=onLed]',function () {
+
      var id = $(this).data('id');
      var roomName = $('#'+id).children('td[data-target=roomName]').text();
      var ledStatus = $('#'+id).children('td[data-target=ledStatus]');
      var is_active = 1;
      $.ajax({
-       url: "http://localhost:8000/api/led/"+id,
+       url:"http://localhost:8000/api/led/"+id,
          // The data to send (will be converted to a query string)
          data:{
              "status":"on",
              "is_active":1
          },
          // Whether this is a POST or GET request
-         type: "PUT",
+         type:"PUT",
          // The type of data we expect back
          dataType : "json",
          success: function (response) {
              $('#'+id).children('td[data-target=ledStatus]').text(response.status);
-             $('#'+id).children('td[data-target=ledStatus]').addClass('badge badge-success');
              console.log(response);
          }
        });
    });
-    $(document).on('click','a[data-role=offLed]',function () {
+    $(document).on('click','button[data-role=offLed]',function () {
         var id = $(this).data('id');
         $.ajax({
             url: "http://localhost:8000/api/led/"+id,
@@ -46,7 +46,7 @@ $(document).ready(function () {
         url:'http://localhost:8000/api/flame/1',
         type:'GET',
         datatype:'JSON',
-        success:function (response) {
+        success:function (response){
             if (response.type == 'flame') {document.getElementById('flame').innerText = response.value;
                 if(response.value > 90) {
                     $('#alertFlameCard').removeClass('bg-info');
@@ -76,5 +76,50 @@ $(document).ready(function () {
                     document.getElementById('venSystem').innerText= "OFF";
                 }
         }
+    });
+    $(document).on('click','button[data-role=openDoor]',function () {
+        var id = $(this).data('id');
+        $('#openDoorId').val(id);
+        $("#openDoorModal").modal("toggle");
+
+    });
+    $('#openBtn').click(function () {
+        var id =   $('#openDoorId').val();
+        var password = $('#password').val();
+        $.ajax({
+            url:'http://localhost:8000/api/door/'+id,
+            type:'PUT',
+            datatype:'JSON',
+            data:{
+                "status":1,
+                "password":password
+            },
+            success:function (response){
+                $('#'+id+'door').children('td[data-target=doorStatus]').text('ON');
+                $("#openDoorModal").modal("toggle");
+            }
+        });
+    });
+    $(document).on('click','button[data-role=closeDoor]',function () {
+        var id = $(this).data('id');
+        $('#closeDoorId').val(id);
+        $("#closeDoorModal").modal("toggle");
+    });
+    $('#closeBtn').click(function () {
+        var id =   $('#closeDoorId').val();
+        var password = $('#passwordCloseDoor').val();
+        $.ajax({
+            url:'http://localhost:8000/api/door/'+id,
+            type:'PUT',
+            datatype:'JSON',
+            data:{
+                "status":0,
+                "password":password
+            },
+            success:function (response){
+                $('#'+id+'door').children('td[data-target=doorStatus]').text('OFF');
+                $("#closeDoorModal").modal("toggle");
+            }
+        });
     });
 });

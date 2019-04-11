@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use function GuzzleHttp\Psr7\get_message_body_summary;
 use Illuminate\Http\Request;
 
 class DoorController extends Controller
@@ -68,7 +69,11 @@ class DoorController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        try {
+
+        } catch (\Exception $ex){
+        }
+
     }
 
     /**

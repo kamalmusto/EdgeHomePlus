@@ -21,3 +21,4 @@ Route::get('/', function () {
     return view('index');
 })->name('EdgeHome');
 Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('door','DoorController');
