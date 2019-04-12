@@ -47,26 +47,29 @@ $(document).ready(function () {
         type:'GET',
         datatype:'JSON',
         success:function (response){
+            console.log(response);
             if (response.type == 'flame') {document.getElementById('flame').innerText = response.value;
-                if(response.value > 90) {
+                if(response.value > 60) {
                     $('#alertFlameCard').removeClass('bg-info');
                     $('#alertFlameCard').addClass('bg-warning');
-                    document.getElementById('statusFlameAlert').innerHTML = 'Warning';
+                    document.getElementById('statusFlameAlert').innerText= 'Warning';
                 }
                 else {
                     $('#alertFlameCard').removeClass('bg-warning');
                     $('#alertFlameCard').addClass('bg-info');
-                    document.getElementById('statusFlameAlert').innerHTML = 'Good';
+                    document.getElementById('statusFlameAlert').innerText = 'Good';
                 }
             }
         }
 
     });
+    //get Value from DHt
     $.ajax({
         url:'http://localhost:8000/api/dht/1',
         type:'GET',
         datatype:'JSON',
         success:function (response) {
+            console.log(response);
                 if (response.type == 'dht') { document.getElementById('temp').innerText = response.temp; document.getElementById('hum').innerText = response.hum;}
                 if(response.temp > 22 || response.hum > 40) {
 
