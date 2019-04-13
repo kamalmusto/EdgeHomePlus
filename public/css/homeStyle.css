@@ -1,11 +1,15 @@
 
 .roomName{
     padding: 3%;
-    background-color: #343a40;
+    background-color: #141619;
     border:5px;
     border-bottom-style:solid ;
 
     color:#ffffff;
+}
+.bg-black{
+    background-color: #141619;
+
 }
 .roomBody{
     padding: 1%;

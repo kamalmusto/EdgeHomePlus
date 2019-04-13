@@ -77,7 +77,7 @@
                             <div class="roomName"> <h3 class="text-center">Lights</h3></div>
                             <div class="roomBody">
                                     <table class="table table-hover">
-                                           <thead class="bg-dark text-white">
+                                           <thead class="bg-black text-white">
                                                 <tr>
                                                     <th>Room</th>
                                                     <th>Status</th>
@@ -103,7 +103,7 @@
                         <div class="roomName"> <h3 class="text-center">Doors</h3></div>
                         <div class="roomBody">
                             <table class="table table-hover">
-                                <thead class="bg-dark text-white">
+                                <thead class="bg-black text-white">
                                 <tr>
                                     <th>Room</th>
                                     <th>Status</th>
@@ -132,7 +132,7 @@
                         <div class="roomName"> <h3 class="text-center">Other Devices</h3></div>
                         <div class="roomBody">
                             <table class="table table-hover">
-                                <thead class="bg-dark text-white">
+                                <thead class="bg-black text-white">
                                 <tr>
                                     <th>Room</th>
                                     <th>Device</th>
@@ -166,7 +166,7 @@
     <!-- open Door modal -->
     <div class=" modal fade" tabindex="-1" role="dialog" aria-labelledby="openDoorModalLabel" id="openDoorModal">
         <div class="modal-dialog" role="document">
-            <div  class="bg-dark modal-content text-white">
+            <div  class="bg-blackmodal-content text-white">
                 <div class="modal-header">
                     <h4 class="modal-title text-white" id="loginModalLabel"  data-target="">Security System</h4>
                     <button type="button" name="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -214,7 +214,7 @@
     <!-- Close Door Modal -->
     <div class=" modal fade" tabindex="-1" role="dialog" aria-labelledby="closeDoorModalLabel" id="closeDoorModal">
         <div class="modal-dialog" role="document">
-            <div  class="bg-dark modal-content text-white">
+            <div  class="bg-blackmodal-content text-white">
                 <div class="modal-header">
                     <h4 class="modal-title text-white" id="closeDoorModalLabel"  data-target="">Security System Close</h4>
                     <button type="button" name="button" class="close" data-dismiss="modal" aria-label="Close">

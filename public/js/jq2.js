@@ -1,5 +1,41 @@
 $(document).ready(function () {
+    $.ajax({
+        url:'http://localhost:8000/api/dht/1',
+        type:'GET',
+        datatype:'JSON',
+        success:function (response) {
+            console.log(response);
+            if (response.type == 'dht') { document.getElementById('temp').innerText = response.temp; document.getElementById('hum').innerText = response.hum;}
+            if(response.temp > 22 || response.hum > 40) {
 
+                document.getElementById('venSystem').innerText = "ON";
+            }
+            else {
+                document.getElementById('venSystem').innerText= "OFF";
+            }
+        }
+    });
+    $.ajax({
+        url:'http://localhost:8000/api/flame/1',
+        type:'GET',
+        datatype:'JSON',
+        success:function (response){
+            console.log(response);
+            if (response.type == 'flame') {document.getElementById('flame').innerText = response.value;
+                if(response.value > 60) {
+                    $('#alertFlameCard').removeClass('bg-info');
+                    $('#alertFlameCard').addClass('bg-warning');
+                    document.getElementById('statusFlameAlert').innerText= 'Warning';
+                }
+                else {
+                    $('#alertFlameCard').removeClass('bg-warning');
+                    $('#alertFlameCard').addClass('bg-info');
+                    document.getElementById('statusFlameAlert').innerText = 'Good';
+                }
+            }
+        }
+
+    });
     $(document).on('click','button[data-role=onLed]',function () {
 
      var id = $(this).data('id');
@@ -63,23 +99,6 @@ $(document).ready(function () {
         }
 
     });
-    //get Value from DHt
-    $.ajax({
-        url:'http://localhost:8000/api/dht/1',
-        type:'GET',
-        datatype:'JSON',
-        success:function (response) {
-            console.log(response);
-                if (response.type == 'dht') { document.getElementById('temp').innerText = response.temp; document.getElementById('hum').innerText = response.hum;}
-                if(response.temp > 22 || response.hum > 40) {
-
-                    document.getElementById('venSystem').innerText = "ON";
-                }
-                else {
-                    document.getElementById('venSystem').innerText= "OFF";
-                }
-        }
-    });
     $(document).on('click','button[data-role=openDoor]',function () {
         var id = $(this).data('id');
         $('#openDoorId').val(id);
@@ -125,4 +144,46 @@ $(document).ready(function () {
             }
         });
     });
+    setInterval(getDataAndFill,10000);
 });
+function getDataAndFill(){
+    //get Value from DHt
+    $.ajax({
+        url:'http://localhost:8000/api/dht/1',
+        type:'GET',
+        datatype:'JSON',
+        success:function (response) {
+            console.log(response);
+            if (response.type == 'dht') { document.getElementById('temp').innerText = response.temp; document.getElementById('hum').innerText = response.hum;}
+            if(response.temp > 22 || response.hum > 40) {
+
+                document.getElementById('venSystem').innerText = "ON";
+            }
+            else {
+                document.getElementById('venSystem').innerText= "OFF";
+            }
+        }
+    });
+    $.ajax({
+        url:'http://localhost:8000/api/flame/1',
+        type:'GET',
+        datatype:'JSON',
+        success:function (response){
+            console.log(response);
+            if (response.type == 'flame') {document.getElementById('flame').innerText = response.value;
+                if(response.value > 60) {
+                    $('#alertFlameCard').removeClass('bg-info');
+                    $('#alertFlameCard').addClass('bg-warning');
+                    document.getElementById('statusFlameAlert').innerText= 'Warning';
+                }
+                else {
+                    $('#alertFlameCard').removeClass('bg-warning');
+                    $('#alertFlameCard').addClass('bg-info');
+                    document.getElementById('statusFlameAlert').innerText = 'Good';
+                }
+            }
+        }
+
+    });
+}
+
