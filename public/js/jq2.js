@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $('html').niceScroll();
     $.ajax({
         url:'http://localhost:8000/api/dht/1',
         type:'GET',

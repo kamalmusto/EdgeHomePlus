@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14455c54-d516-46c8-b39b-5ceca44a372f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/jq2.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jq2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/AdminBase.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/AdminBase.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,45 +62,46 @@
           <entry key="project.open.time.52" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.60" value="1" />
-          <entry key="project.opened" value="42" />
+          <entry key="project.open.time.64" value="1" />
+          <entry key="project.opened" value="43" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="2a45e2cffc906db1f13d03e46b438a4efdd73b06" value="1" />
           <entry key="artisan" value="1" />
-          <entry key="css" value="46" />
-          <entry key="env" value="5" />
+          <entry key="css" value="47" />
+          <entry key="env" value="6" />
           <entry key="example" value="1" />
           <entry key="git" value="1" />
           <entry key="gitattributes" value="1" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="2" />
           <entry key="jpg" value="6" />
-          <entry key="js" value="35" />
+          <entry key="js" value="38" />
           <entry key="json" value="2" />
           <entry key="lock" value="1" />
           <entry key="md" value="3" />
-          <entry key="php" value="366" />
+          <entry key="php" value="372" />
           <entry key="png" value="13" />
-          <entry key="rnc" value="3" />
+          <entry key="rnc" value="5" />
           <entry key="ts" value="3" />
           <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key=".env file" value="6" />
-          <entry key="Blade" value="77" />
-          <entry key="CSS" value="46" />
+          <entry key=".env file" value="7" />
+          <entry key="Blade" value="82" />
+          <entry key="CSS" value="47" />
           <entry key="HTML" value="2" />
           <entry key="Image" value="19" />
           <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="35" />
+          <entry key="JavaScript" value="38" />
           <entry key="Markdown" value="3" />
-          <entry key="PHP" value="288" />
+          <entry key="PHP" value="289" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="RNG Compact" value="3" />
+          <entry key="RNG Compact" value="5" />
           <entry key="TypeScript" value="3" />
           <entry key="UNKNOWN" value="1" />
           <entry key="XML" value="5" />
@@ -105,26 +110,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="808" />
+          <entry key="css" value="820" />
           <entry key="env" value="37" />
           <entry key="html" value="32" />
-          <entry key="js" value="4271" />
+          <entry key="js" value="4297" />
           <entry key="md" value="10" />
-          <entry key="php" value="12501" />
+          <entry key="php" value="13061" />
           <entry key="rnc" value="1" />
-          <entry key="txt" value="297" />
+          <entry key="txt" value="326" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="37" />
-          <entry key="Blade" value="8126" />
-          <entry key="CSS" value="808" />
+          <entry key="Blade" value="8686" />
+          <entry key="CSS" value="820" />
           <entry key="HTML" value="32" />
-          <entry key="JavaScript" value="4271" />
+          <entry key="JavaScript" value="4297" />
           <entry key="Markdown" value="10" />
           <entry key="PHP" value="4374" />
-          <entry key="PLAIN_TEXT" value="298" />
+          <entry key="PLAIN_TEXT" value="327" />
           <entry key="RNG Compact" value="1" />
         </counts>
       </usages-collector>
@@ -143,38 +148,95 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/jq.js">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="8580">
+              <caret line="390" column="28" selection-start-line="390" selection-start-column="28" selection-end-line="390" selection-end-column="28" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/jq2.js">
+        <entry file="file://$PROJECT_DIR$/public/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="80" selection-start-line="80" selection-end-line="80" />
-              <folding>
-                <element signature="e#46#691#0" />
-                <element signature="e#709#1618#0" />
-                <element signature="e#98#845#0" />
-                <element signature="e#914#1546#0" />
-                <element signature="e#1560#2393#0" />
-                <element signature="e#3120#3244#0" />
-                <element signature="e#3283#3804#0" />
-                <element signature="e#3634#3786#0" />
-                <element signature="e#4041#4574#0" />
-                <element signature="n#!!block;n#getDataAndFill#0" />
-                <element signature="e#5495#6140#0" />
-                <element signature="e#6158#7067#0" />
-              </folding>
+            <state relative-caret-position="308">
+              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/css/homeStyle.css">
+        <entry file="file://$PROJECT_DIR$/public/js/jq2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+            <state relative-caret-position="198">
+              <caret line="9" column="57" lean-forward="true" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+              <folding>
+                <element signature="n#!!block;n#getDataAndFill#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/home.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4246">
+              <caret line="193" column="36" selection-start-line="193" selection-start-column="36" selection-end-line="193" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/lib/bootstrap/css/bootstrap.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2882">
+              <caret line="5" column="126935" selection-start-line="5" selection-start-column="126935" selection-end-line="5" selection-end-column="126935" />
+              <folding>
+                <element signature="e#58844#59044#2" expanded="true" />
+                <element signature="e#59252#59401#2" expanded="true" />
+                <element signature="e#59903#60049#2" expanded="true" />
+                <element signature="e#60350#60516#1" expanded="true" />
+                <element signature="e#72112#72355#2" expanded="true" />
+                <element signature="e#73222#73471#2" expanded="true" />
+                <element signature="e#100341#100531#2" expanded="true" />
+                <element signature="e#100577#100767#2" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/common.rnc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2706">
+              <caret line="123" column="18" selection-start-line="123" selection-start-column="18" selection-end-line="123" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/aria.rnc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="9922">
+              <caret line="451" column="18" selection-start-line="451" selection-start-column="18" selection-end-line="451" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/AdminBase.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -193,18 +255,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.footer</find>
-      <find>login</find>
-      <find>&lt;lin</find>
-      <find>log</find>
-      <find>jq2</find>
-      <find>mater</find>
-      <find>jq</find>
-      <find>Sys</find>
-      <find>H</find>
-      <find>UpdateDoor</find>
-      <find>but</find>
-      <find>moda</find>
       <find>modal-head</find>
       <find>nice</find>
       <find>Door</find>
@@ -217,12 +267,24 @@
       <find>logut</find>
       <find>loginModal</find>
       <find>openBt</find>
-      <find>modal</find>
       <find>alert(</find>
       <find>mod</find>
       <find>temp</find>
       <find>hum</find>
       <find>alertFlameCard</find>
+      <find>bg-blacktext-white</find>
+      <find>Other</find>
+      <find>Devices</find>
+      <find>Tish</find>
+      <find>Set</find>
+      <find>bttn-jelly</find>
+      <find>&gt;Se</find>
+      <find>jq</find>
+      <find>&gt;Close&lt;</find>
+      <find>leds</find>
+      <find>Time</find>
+      <find>data-ta</find>
+      <find>modal</find>
     </findStrings>
     <replaceStrings>
       <replace>col-md-6</replace>
@@ -230,6 +292,8 @@
       <replace>our-team</replace>
       <replace />
       <replace>col-4</replace>
+      <replace>bg-black text-white</replace>
+      <replace>bttn-fill</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -246,8 +310,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Door.php" />
-        <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/app/Flame.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/FlamesController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/api/FlamesController.php" />
@@ -291,12 +353,14 @@
         <option value="$PROJECT_DIR$/public/css/myStyle.css" />
         <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/layouts/AdminBase.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/home.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/LedController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/api/RoomsController.php" />
-        <option value="$PROJECT_DIR$/public/js/jq2.js" />
         <option value="$PROJECT_DIR$/public/css/homeStyle.css" />
+        <option value="$PROJECT_DIR$/resources/views/admin/layouts/AdminBase.blade.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$USER_HOME$/Downloads/home.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/home.blade.php" />
+        <option value="$PROJECT_DIR$/public/js/jq2.js" />
       </list>
     </option>
   </component>
@@ -408,7 +472,7 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="793" />
+    <option name="x" value="-7" />
     <option name="width" value="814" />
     <option name="height" value="907" />
   </component>
@@ -420,6 +484,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -469,12 +534,16 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="home&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/resources/views/admin/home.blade.php&#10;.roomName&#9;null&#9;null&#10;jq&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/public/js/jq2.js&#10;api&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/routes/api.php&#10;web&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/routes/web.php&#10;index&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/resources/views/index.blade.php&#10;ind&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/resources/views/index.blade.php&#10;inde&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/resources/views/index.blade.php&#10;jq2&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/public/js/jq2.js&#10;hom&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/resources/views/admin/rooms/homeDoor.blade.php&#10;style.m&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/public/css/admin/style.min.css&#10;Controller&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/app/Http/Controllers/RoomsController.php&#10;we&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/routes/web.php&#10;Auth&#9;null&#9;null&#10;au&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/vendor/laravel/framework/src/Illuminate/Support/Facades/Auth.php&#10;the&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/resources/views/theme.blade.php&#10;das&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/resources/views/admin/dash2.blade.php&#10;DAS&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/resources/views/admin/dash2.blade.php&#10;a&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/routes/api.php&#10;Room&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/app/Room.php&#10;rooms&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/app/Http/Controllers/RoomsController.php&#10;dash2&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/resources/views/admin/dash2.blade.php&#10;dash&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/resources/views/admin/dash2.blade.php&#10;da&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/resources/views/admin/dash2.blade.php&#10;led&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/app/Http/Controllers/api/LedsDetailsController.php&#10;Adm&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/resources/views/admin/layouts/AdminBase.blade.php&#10;Admin&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/resources/views/admin/layouts/AdminBase.blade.php" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="jq&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/public/js/jq2.js&#10;index&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/resources/views/index.blade.php&#10;api&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/routes/api.php&#10;home&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/resources/views/admin/home.blade.php&#10;.roomName&#9;null&#9;null&#10;web&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/routes/web.php&#10;ind&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/resources/views/index.blade.php&#10;inde&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/resources/views/index.blade.php&#10;jq2&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/public/js/jq2.js&#10;hom&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/resources/views/admin/rooms/homeDoor.blade.php&#10;style.m&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/public/css/admin/style.min.css&#10;Controller&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/app/Http/Controllers/RoomsController.php&#10;we&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/routes/web.php&#10;Auth&#9;null&#9;null&#10;au&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/vendor/laravel/framework/src/Illuminate/Support/Facades/Auth.php&#10;the&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/resources/views/theme.blade.php&#10;das&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/resources/views/admin/dash2.blade.php&#10;DAS&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/resources/views/admin/dash2.blade.php&#10;a&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/routes/api.php&#10;Room&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/app/Room.php&#10;rooms&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/app/Http/Controllers/RoomsController.php&#10;dash2&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/resources/views/admin/dash2.blade.php&#10;dash&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/resources/views/admin/dash2.blade.php&#10;da&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/resources/views/admin/dash2.blade.php&#10;led&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/app/Http/Controllers/api/LedsDetailsController.php&#10;Adm&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/resources/views/admin/layouts/AdminBase.blade.php&#10;Admin&#9;FILE&#9;file://C:/xampp/htdocs/EdgeHomePlus/resources/views/admin/layouts/AdminBase.blade.php" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../SyMarkting" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -508,6 +577,9 @@
     </option>
   </component>
   <component name="RunManager" selected="Laravel.EdgeHomePlus">
+    <configuration name="home.blade.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/EdgeHomePlus/resources/views/admin/home.blade.php">
+      <method v="2" />
+    </configuration>
     <configuration name="EdgeHomePlus" type="LaravelStorm_run_conf_serve" factoryName="Laravel" singleton="true">
       <option name="host" value="localhost" />
       <option name="port" value="8000" />
@@ -529,9 +601,11 @@
     <list>
       <item itemvalue="Laravel.EdgeHomePlus" />
       <item itemvalue="npm.dev" />
+      <item itemvalue="JavaScript Debug.home.blade.php" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.home.blade.php" />
         <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
@@ -590,7 +664,8 @@
       <workItem from="1554814897332" duration="5311000" />
       <workItem from="1554882011430" duration="1167000" />
       <workItem from="1555000248511" duration="3784000" />
-      <workItem from="1555080039884" duration="9782000" />
+      <workItem from="1555080039884" duration="21379000" />
+      <workItem from="1555241513489" duration="6337000" />
     </task>
     <task id="LOCAL-00001" summary="Create Controllers">
       <created>1551633583683</created>
@@ -697,11 +772,18 @@
       <option name="project" value="LOCAL" />
       <updated>1555096218669</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="update and make ajxa interval">
+      <created>1555128415849</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1555128415849</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="269505000" />
+    <option name="totallyTimeSpent" value="287439000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -713,17 +795,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49861878" visible="true" weight="0.16431323" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49861878" visible="true" weight="0.22721438" />
       <window_info id="Structure" order="1" sideWeight="0.5013812" side_tool="true" weight="0.1720154" />
       <window_info id="npm" order="2" sideWeight="0.5013812" side_tool="true" weight="0.1720154" />
       <window_info id="Favorites" order="3" sideWeight="0.5013812" side_tool="true" weight="0.1720154" />
+      <window_info active="true" anchor="bottom" id="File Transfer" visible="true" weight="0.3425926" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32893" />
-      <window_info active="true" anchor="bottom" auto_hide="true" id="Run" order="2" visible="true" weight="0.23918575" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" auto_hide="true" id="Run" order="2" weight="0.23918575" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3994911" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49924356" weight="0.32838285" />
@@ -736,6 +818,7 @@
       <window_info anchor="bottom" id="RNConsole" order="13" />
       <window_info anchor="bottom" id="TypeScript" order="14" weight="0.32936507" />
       <window_info active="true" anchor="bottom" id="Messages" order="15" visible="true" weight="0.32951653" />
+      <window_info anchor="right" id="Remote Host" weight="0.32991013" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24967907" />
@@ -790,7 +873,8 @@
     <MESSAGE value="create login modal and set operation" />
     <MESSAGE value="create ajax requests" />
     <MESSAGE value=" ajax requests" />
-    <option name="LAST_COMMIT_MESSAGE" value=" ajax requests" />
+    <MESSAGE value="update and make ajxa interval" />
+    <option name="LAST_COMMIT_MESSAGE" value="update and make ajxa interval" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -804,28 +888,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/rooms/homeDoor.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="38" column="18" lean-forward="true" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example.js" />
-    <entry file="file://$PROJECT_DIR$/phpunit.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="42" lean-forward="true" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -880,13 +942,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/admin/custom.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1765">
@@ -903,13 +958,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/admin/myStyle.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/lib/bootstrap/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="5" column="89448" selection-start-line="5" selection-start-column="89448" selection-end-line="5" selection-end-column="89448" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/admin/style.min.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -955,67 +1003,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="380" column="67" selection-start-line="380" selection-start-column="67" selection-end-line="380" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/AdminBase.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="66" column="68" selection-start-line="66" selection-start-column="64" selection-end-line="66" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#5#0" expanded="true" />
-            <element signature="e#0#5#0" expanded="true" />
-            <element signature="e#0#5#0" expanded="true" />
-            <element signature="e#0#5#0" expanded="true" />
-            <element signature="e#0#5#0" expanded="true" />
-            <element signature="e#0#5#0" expanded="true" />
-            <element signature="e#0#5#0" expanded="true" />
-            <element signature="e#0#5#0" expanded="true" />
-            <element signature="e#0#5#0" expanded="true" />
-            <element signature="e#0#5#0" expanded="true" />
-            <element signature="e#0#5#0" expanded="true" />
-            <element signature="e#0#5#0" expanded="true" />
-            <element signature="e#0#5#0" expanded="true" />
-            <element signature="e#0#5#0" expanded="true" />
-            <element signature="e#0#5#0" expanded="true" />
-            <element signature="e#0#5#0" expanded="true" />
-            <element signature="e#0#5#0" expanded="true" />
-            <element signature="e#0#5#0" expanded="true" />
-            <element signature="e#0#5#0" expanded="true" />
-            <element signature="e#0#5#0" expanded="true" />
-            <element signature="e#0#5#0" expanded="true" />
-            <element signature="e#0#5#0" expanded="true" />
-            <element signature="e#0#5#0" expanded="true" />
-            <element signature="e#0#5#0" expanded="true" />
-            <element signature="e#0#5#0" expanded="true" />
-            <element signature="e#0#5#0" expanded="true" />
-            <element signature="e#0#5#0" expanded="true" />
-            <element signature="e#0#5#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/api/testaddController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-          <folding>
-            <element signature="e#111#1550#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/api/testaddController.php" />
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/api/DhtController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
@@ -1039,16 +1027,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Resources/hgfhg.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-          <folding>
-            <element signature="e#88#355#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/hgfhg.php" />
     <entry file="file://$PROJECT_DIR$/routes/channels.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1056,16 +1035,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#390#428#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="21" column="43" lean-forward="true" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -1073,10 +1042,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
           <caret line="45" column="40" lean-forward="true" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-            <element signature="e#848#1089#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1084,10 +1049,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-          <folding>
-            <element signature="e#139#1567#0#PHP" expanded="true" />
-            <element signature="e#292#329#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1095,10 +1056,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="387">
           <caret line="18" column="39" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="39" />
-          <folding>
-            <element signature="e#43#57#0#PHP" expanded="true" />
-            <element signature="e#1005#1159#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1106,9 +1063,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-          <folding>
-            <element signature="e#273#360#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1116,13 +1070,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#64#472#0#PHP" expanded="true" />
-            <element signature="e#95#182#0#PHP" expanded="true" />
-            <element signature="e#187#280#0#PHP" expanded="true" />
-            <element signature="e#285#374#0#PHP" expanded="true" />
-            <element signature="e#379#470#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1130,9 +1077,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding>
-            <element signature="e#272#359#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1147,40 +1091,106 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding>
-            <element signature="e#88#361#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/jq.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/jq2.js">
+    <entry file="file://$PROJECT_DIR$/public/css/homeStyle.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        <state relative-caret-position="198">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="71" lean-forward="true" selection-start-line="9" selection-start-column="71" selection-end-line="9" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="316" column="23" selection-start-line="316" selection-start-column="23" selection-end-line="316" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8580">
+          <caret line="390" column="28" selection-start-line="390" selection-start-column="28" selection-end-line="390" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4246">
+          <caret line="193" column="36" selection-start-line="193" selection-start-column="36" selection-end-line="193" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/bootstrap/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2882">
+          <caret line="5" column="126935" selection-start-line="5" selection-start-column="126935" selection-end-line="5" selection-end-column="126935" />
           <folding>
-            <element signature="e#46#691#0" />
-            <element signature="e#709#1618#0" />
-            <element signature="e#98#845#0" />
-            <element signature="e#914#1546#0" />
-            <element signature="e#1560#2393#0" />
-            <element signature="e#3120#3244#0" />
-            <element signature="e#3283#3804#0" />
-            <element signature="e#3634#3786#0" />
-            <element signature="e#4041#4574#0" />
-            <element signature="n#!!block;n#getDataAndFill#0" />
-            <element signature="e#5495#6140#0" />
-            <element signature="e#6158#7067#0" />
+            <element signature="e#58844#59044#2" expanded="true" />
+            <element signature="e#59252#59401#2" expanded="true" />
+            <element signature="e#59903#60049#2" expanded="true" />
+            <element signature="e#60350#60516#1" expanded="true" />
+            <element signature="e#72112#72355#2" expanded="true" />
+            <element signature="e#73222#73471#2" expanded="true" />
+            <element signature="e#100341#100531#2" expanded="true" />
+            <element signature="e#100577#100767#2" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/homeStyle.css">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/common.rnc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        <state relative-caret-position="2706">
+          <caret line="123" column="18" selection-start-line="123" selection-start-column="18" selection-end-line="123" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/aria.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9922">
+          <caret line="451" column="18" selection-start-line="451" selection-start-column="18" selection-end-line="451" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/AdminBase.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/jq2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="57" lean-forward="true" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+          <folding>
+            <element signature="n#!!block;n#getDataAndFill#0" />
+          </folding>
         </state>
       </provider>
     </entry>

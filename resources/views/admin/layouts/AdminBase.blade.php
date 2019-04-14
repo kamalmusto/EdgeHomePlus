@@ -73,7 +73,7 @@
     </aside>
 @yield('content')
 </div>
-<footer class="footer text-center  text-white" style="background-color: #1f262d">
+<footer class="footer text-center">
     All Rights Reserved by  Designed and Developed in <a href="https://.com" style="color: #f82249">Tishreen University</a>.
 </footer>
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->i

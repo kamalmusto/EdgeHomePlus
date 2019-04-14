@@ -89,8 +89,8 @@
                                                 <tr id="{{$led->id}}">
                                                     <td data-target="roomName">{{$led->room->name}} </td>
                                                     <td class="text-uppercase" data-target="ledStatus">{{$led->status}}</td>
-                                                    <td><button href="#" class="bttn-jelly bttn-sm bttn-danger mr-2" data-role="offLed" data-id="{{$led->id}}">OFF</button>
-                                                        <button href="#"  class="bttn-jelly bttn-sm bttn-success"  data-role="onLed" data-id = "{{$led->id}}">ON</button>
+                                                    <td><button href="#" class="bttn-fill  bttn-sm bttn-danger mr-2" data-role="offLed" data-id="{{$led->id}}">OFF</button>
+                                                        <button href="#"  class="bttn-fill  bttn-sm bttn-success"  data-role="onLed" data-id = "{{$led->id}}">ON</button>
                                                     </td>
                                                 </tr>
                                            @endforeach
@@ -115,8 +115,8 @@
                                     <tr id="{{$door->id}}door">
                                         <td>{{$door->room->name}}</td>
                                         <td data-target="doorStatus">@if($door->status) ON @else OFF @endif</td>
-                                        <td><button  class="bttn-jelly bttn-sm bttn-danger mr-2" data-role="closeDoor" data-target="" data-id="{{$door->id}}">Close</button>
-                                            <button class="bttn-jelly bttn-sm bttn-success" data-role="openDoor" data-toggle="" data-id="{{$door->id}}">Open</button>
+                                        <td><button  class="bttn-fill  bttn-sm bttn-danger mr-2" data-role="closeDoor" data-target="" data-id="{{$door->id}}">Close</button>
+                                            <button class="bttn-fill  bttn-sm bttn-success" data-role="openDoor" data-toggle="" data-id="{{$door->id}}">Open</button>
                                         </td>
                                     </tr>
                                 @endforeach
@@ -127,9 +127,9 @@
                 </div>
             </div>
             <div class="row" >
-                <div class= "col-md-12 col-sm-12" >
+                <div class= "col-md-6 col-sm-12" >
                     <div class="homeRoom">
-                        <div class="roomName"> <h3 class="text-center">Other Devices</h3></div>
+                        <div class="roomName"> <h3 class="text-center">Devices 220 V</h3></div>
                         <div class="roomBody">
                             <table class="table table-hover">
                                 <thead class="bg-black text-white">
@@ -146,29 +146,68 @@
                                     <td>Fan</td>
                                     <td>OFF</td>
                                     <td>
-                                        <button href="#" class="bttn-jelly bttn-sm bttn-danger mr-2" data-role="" data-id="">OFF</button>
-                                        <button href="#"  class="bttn-jelly bttn-sm bttn-success"  data-role="" data-id = "">ON</button>
+                                        <button href="#" class="bttn-fill  bttn-sm bttn-danger mr-2" data-role="" data-id="">OFF</button>
+                                        <button href="#"  class="bttn-fill  bttn-sm bttn-success"  data-role="" data-id = "">ON</button>
                                     </td>
                                 </tr>
-
+                                <tr>
+                                    <td>Living Room</td>
+                                    <td>Lamp</td>
+                                    <td>OFF</td>
+                                    <td>
+                                        <button href="#" class="bttn-fill  bttn-sm bttn-danger mr-2" data-role="" data-id="">OFF</button>
+                                        <button href="#"  class="bttn-fill  bttn-sm bttn-success"  data-role="" data-id = "">ON</button>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class= "col-md-6 col-sm-12" >
+                    <div class="homeRoom">
+                        <div class="roomName">  <h3 class="text-center"> <button  class="bttn-fill bttn-md bttn-primary" data-role="setTimer" data-target="#setTimer" data-toggle="modal">Set</button> Timer </h3></div>
+                        <div class="roomBody">
+                            <table class="table table-hover">
+                                <thead class="bg-black text-white">
+                                <tr>
+                                    <th>Room</th>
+                                    <th>Device</th>
+                                    <th>Time On</th>
+                                    <th>Time OFF</th>
+                                    <th>Period</th>
+                                    <th>Controls</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Room</td>
+                                    <td>Device</td>
+                                    <td>Time On</td>
+                                    <td>Time OFF</td>
+                                    <td>Period</td>
+                                    <td><button  class="bttn-fill  bttn-sm bttn-danger mr-2" data-role="closeDoor" data-target="" data-id="">Cancel</button>
+                                        <button class="bttn-fill  bttn-sm bttn-success" data-role="openDoor" data-toggle="" data-id="">Change</button>
+                                    </td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
         @csrf
     </form>
-    <!-- open Door modal -->
+    <!-- modals -->
+    <!-- start open Door modal -->
     <div class=" modal fade" tabindex="-1" role="dialog" aria-labelledby="openDoorModalLabel" id="openDoorModal">
         <div class="modal-dialog" role="document">
-            <div  class="bg-blackmodal-content text-white">
+            <div  class="bg-black modal-content text-white">
                 <div class="modal-header">
-                    <h4 class="modal-title text-white" id="loginModalLabel"  data-target="">Security System</h4>
+                    <h4 class="modal-title text-white" id="loginModalLabel"  data-target="">Open Door</h4>
                     <button type="button" name="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span class="text-white" aria-hidden="true">X</span>
                     </button>
@@ -176,47 +215,49 @@
                 <div class="modal-body">
                     <div class="container-fluid">
                         <div class="col-12">
-                                <div class="form-group row">
-                                    <label for="password" class="col-12 col-form-label ">Password</label>
-                                    <div class="col-12">
-                                        <input id="password" data-target="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" value="" required >
-                                        @if ($errors->has('password'))
-                                            <span class="invalid-feedback" role="alert">
+                            <div class="form-group row">
+                                <label for="password" class="col-12 col-form-label ">Password</label>
+                                <div class="col-12">
+                                    <input id="password" data-target="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" value="" required >
+                                    @if ($errors->has('password'))
+                                        <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('password') }}</strong>
                                     </span>
-                                        @endif
-                                    </div>
+                                    @endif
                                 </div>
-                                <div class="form-group row">
-                                    <div class="col-12">
-                                        <input hidden id="status" data-target="status" type="text" class="form-control" name="status" value="1" required >
-                                    </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-12">
+                                    <input hidden id="status" data-target="status" type="text" class="form-control" name="status" value="1" required >
                                 </div>
-                                <div class="form-group row">
-                                    <div class="col-12">
-                                        <input type="hidden" id="openDoorId" data-target="id" type="text" class="form-control" value="id">
-                                    </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-12">
+                                    <input type="hidden" id="openDoorId" data-target="id" type="text" class="form-control" value="id">
                                 </div>
+                            </div>
 
-                                <div class="form-group row mb-0">
-                                    <div class=" col-12 ">
-                                        <button id="openBtn"  class=" mx-auto d-block myBtn">
-                                          <i class="mdi mdi-send" ></i> Send
-                                        </button>
-                                    </div>
+                            <div class="form-group row mb-0">
+                                <div class=" col-12 ">
+                                    <button id="openBtn"  class=" mx-auto d-block myBtn">
+                                        <i class="mdi mdi-send" ></i> Send
+                                    </button>
                                 </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- open Door modal -->
+
     <!-- Close Door Modal -->
     <div class=" modal fade" tabindex="-1" role="dialog" aria-labelledby="closeDoorModalLabel" id="closeDoorModal">
         <div class="modal-dialog" role="document">
-            <div  class="bg-blackmodal-content text-white">
+            <div  class="bg-black modal-content text-white">
                 <div class="modal-header">
-                    <h4 class="modal-title text-white" id="closeDoorModalLabel"  data-target="">Security System Close</h4>
+                    <h4 class="modal-title text-white" id="closeDoorModalLabel"  data-target="">Close Door</h4>
                     <button type="button" name="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span class="text-white" aria-hidden="true">X</span>
                     </button>
@@ -259,6 +300,47 @@
             </div>
         </div>
     </div>
+    <!-- Close Door Modal -->
+
+    <!-- Timer tools modals Modal -->
+    <div class=" modal fade" tabindex="-1" role="dialog" aria-labelledby="setTimer" id="setTimer">
+        <div class="modal-dialog" role="document">
+            <div  class="bg-black modal-content text-white">
+                <div class="modal-header">
+                    <h4 class="modal-title text-white" id="setTimer"  data-target="">Timer</h4>
+                    <button type="button" name="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="text-white" aria-hidden="true">X</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="form-group row">
+                            <label for="sl_Device" class="col-12 col-form-label">Device</label>
+                            <div class="col-12 " >
+                                <select name="sl_Device" id="" class="form-control">
+                                    @foreach($leds as $led)
+                                        <option value="{{$led->id}}" >{{$led->numBin}}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group row mb-0">
+                                <div class=" col-12 ">
+                                    <button id="closeBtn" type="" class=" mx-auto d-block myBtn">
+                                        <i class="mdi mdi-send" ></i> Send
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Close Door Modal -->
+    <!-- end Modals -->
+
 
 @endsection
 @section('scripts')
