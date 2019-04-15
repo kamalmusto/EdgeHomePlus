@@ -186,8 +186,8 @@
                                     <td>Time On</td>
                                     <td>Time OFF</td>
                                     <td>Period</td>
-                                    <td><button  class="bttn-fill  bttn-sm bttn-danger mr-2" data-role="closeDoor" data-target="" data-id="">Cancel</button>
-                                        <button class="bttn-fill  bttn-sm bttn-success" data-role="openDoor" data-toggle="" data-id="">Change</button>
+                                    <td><button  class="bttn-fill  bttn-sm bttn-danger mr-2" data-role="closeDoor" data-target="" data-id="">del</button>
+                                        <button class="bttn-fill  bttn-sm bttn-success" data-role="openDoor" data-toggle="" data-id="">Edit</button>
                                     </td>
                                 </tr>
                                 </tbody>

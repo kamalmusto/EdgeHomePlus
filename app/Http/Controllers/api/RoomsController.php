@@ -17,6 +17,7 @@ class RoomsController extends Controller
     {
         $allRooms = Room::all()->load('leds','dhts','doors','flames');
         return RoomResource::collection($allRooms);
+       // return $allRooms;
     }
 
     /**
