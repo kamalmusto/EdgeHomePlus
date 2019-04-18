@@ -1,6 +1,6 @@
 @extends('admin.layouts.AdminBase')
 @section('styles')
-    <link rel="stylesheet" href="{{asset('css/homeStyle.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('css/homeStyle.css')}}">
     @endsection
 @section('content')
 

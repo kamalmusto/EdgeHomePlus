@@ -1,8 +1,8 @@
 @extends('admin.layouts.AdminBase')
 @section('styles')
-    <link rel="stylesheet" href="{{asset('css/bttn.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/homeStyle.css')}}">
-    <link rel="stylesheet" href="{{asset('css/myStyle.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('css/bttn.min.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('css/homeStyle.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('css/myStyle.css')}}">
 @endsection
 @section('content')
     <div class="page-wrapper">
@@ -344,6 +344,6 @@
 
 @endsection
 @section('scripts')
-    <script src="{{asset('js/jquery.nicescroll.js')}}"></script>
-    <script src="{{asset('js/jq2.js')}}"></script>
+    <script src="{{secure_asset('js/jquery.nicescroll.js')}}"></script>
+    <script src="{{secure_asset('js/jq2.js')}}"></script>
     @endsection

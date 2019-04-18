@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="secure_assets/images/favicon.png">
     <title>EdgeHome Dashboard</title>
-    <link href="{{asset('css/admin/style.min.css')}}" rel="stylesheet">
-    <link rel="stylesheet" href="{{asset('css/icons/fontawesome-all.css')}}">
-    <link rel="stylesheet" href="{{asset('css/icons/material-design-iconic-font/css/materialdesignicons.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/icons/material-design-iconic-font/css/material-design-iconic-font.css')}}">
+    <link href="{{secure_asset('css/admin/style.min.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{secure_asset('css/icons/fontawesome-all.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('css/icons/material-design-iconic-font/css/materialdesignicons.min.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('css/icons/material-design-iconic-font/css/material-design-iconic-font.css')}}">
     @yield('styles')
 </head>
 <body>
@@ -83,14 +83,14 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<script src="{{asset('js/admin/jquery.min.js')}}"></script>
-<script src="{{asset('js/admin/jquery.ui.touch-punch-improved.js')}}"></script>
-<script src="{{asset('js/admin/jquery-ui.min.js')}}"></script>
-<script src="{{asset('js/admin/popper-utils.min.js')}}"></script>
-<script src="{{asset('lib/bootstrap/js/bootstrap.min.js')}}"></script>
-<script src="{{asset('js/admin/perfect-scrollbar.jquery.min.js')}}"></script>
-<script src="{{asset('js/admin/sidebarmenu.js')}}"></script>
-<script src="{{asset('js/admin/custom.min.js')}}"></script>
+<script src="{{secure_asset('js/admin/jquery.min.js')}}"></script>
+<script src="{{secure_asset('js/admin/jquery.ui.touch-punch-improved.js')}}"></script>
+<script src="{{secure_asset('js/admin/jquery-ui.min.js')}}"></script>
+<script src="{{secure_asset('js/admin/popper-utils.min.js')}}"></script>
+<script src="{{secure_asset('lib/bootstrap/js/bootstrap.min.js')}}"></script>
+<script src="{{secure_asset('js/admin/perfect-scrollbar.jquery.min.js')}}"></script>
+<script src="{{secure_asset('js/admin/sidebarmenu.js')}}"></script>
+<script src="{{secure_asset('js/admin/custom.min.js')}}"></script>
 @yield('scripts')
 </body>
 </html>

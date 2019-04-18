@@ -373,22 +373,22 @@
 
 <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 <!-- JavaScript Libraries -->
-<script src="{{asset('lib/jquery/jquery.min.js')}}"></script>
-<script src="{{asset('lib/jquery/jquery-migrate.min.js')}}"></script>
-<script src="{{asset('lib/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-<script src="{{asset('lib/easing/easing.min.js')}}"></script>
-<script src="{{asset('lib/superfish/hoverIntent.js')}}"></script>
-<script src="{{asset('lib/superfish/superfish.min.js')}}"></script>
-<script src="{{asset('lib/wow/wow.min.js')}}"></script>
-<script src="{{asset('lib/venobox/venobox.min.js')}}"></script>
-<script src="{{asset('lib/owlcarousel/owl.carousel.min.js')}}"></script>
+<script src="{{secure_asset('lib/jquery/jquery.min.js')}}"></script>
+<script src="{{secure_asset('lib/jquery/jquery-migrate.min.js')}}"></script>
+<script src="{{secure_asset('lib/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{secure_asset('lib/easing/easing.min.js')}}"></script>
+<script src="{{secure_asset('lib/superfish/hoverIntent.js')}}"></script>
+<script src="{{secure_asset('lib/superfish/superfish.min.js')}}"></script>
+<script src="{{secure_asset('lib/wow/wow.min.js')}}"></script>
+<script src="{{secure_asset('lib/venobox/venobox.min.js')}}"></script>
+<script src="{{secure_asset('lib/owlcarousel/owl.carousel.min.js')}}"></script>
 
 <!-- Contact Form JavaScript File -->
-<script src="{{asset('contactform/contactform.js')}}"></script>
-<script src="{{asset('js/jquery.nicescroll.js')}}"></script>
+<script src="{{secure_asset('contactform/contactform.js')}}"></script>
+<script src="{{secure_asset('js/jquery.nicescroll.js')}}"></script>
 
 <!-- Template Main Javascript File -->
-<script src="{{asset('js/main.js')}}"></script>
+<script src="{{secure_asset('js/main.js')}}"></script>
 </body>
 
 </html>
