@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="14455c54-d516-46c8-b39b-5ceca44a372f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +79,7 @@
           <entry key="json" value="2" />
           <entry key="lock" value="1" />
           <entry key="md" value="3" />
-          <entry key="php" value="372" />
+          <entry key="php" value="373" />
           <entry key="png" value="13" />
           <entry key="rnc" value="5" />
           <entry key="ts" value="3" />
@@ -96,7 +96,7 @@
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="38" />
           <entry key="Markdown" value="3" />
-          <entry key="PHP" value="289" />
+          <entry key="PHP" value="290" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="RNG Compact" value="5" />
           <entry key="TypeScript" value="3" />
@@ -107,15 +107,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Procfile" value="1" />
+          <entry key="Procfile" value="3" />
           <entry key="css" value="820" />
           <entry key="env" value="37" />
           <entry key="html" value="32" />
           <entry key="js" value="4297" />
           <entry key="md" value="10" />
-          <entry key="php" value="13061" />
+          <entry key="php" value="13065" />
           <entry key="rnc" value="1" />
-          <entry key="txt" value="326" />
+          <entry key="txt" value="330" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -126,8 +126,8 @@
           <entry key="HTML" value="32" />
           <entry key="JavaScript" value="4297" />
           <entry key="Markdown" value="10" />
-          <entry key="PHP" value="4374" />
-          <entry key="PLAIN_TEXT" value="328" />
+          <entry key="PHP" value="4378" />
+          <entry key="PLAIN_TEXT" value="334" />
           <entry key="RNG Compact" value="1" />
         </counts>
       </usages-collector>
@@ -163,11 +163,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret column="42" selection-start-column="42" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/app.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
         </entry>
@@ -247,8 +256,8 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="Byte7 &lt;kamalmusto67@gmail.com&gt;" />
         <option value="rand" />
+        <option value="Byte7 &lt;kamalmusto67@gmail.com&gt;" />
         <option value="Kamal &lt;40141015+byte0111@users.noreply.github.com&gt;" />
       </list>
     </option>
@@ -258,7 +267,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Controllers/FlamesController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/api/FlamesController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/api/DoorController.php" />
         <option value="$PROJECT_DIR$/app/Dht.php" />
@@ -309,6 +317,7 @@
         <option value="$PROJECT_DIR$/resources/views/admin/home.blade.php" />
         <option value="$PROJECT_DIR$/public/js/jq2.js" />
         <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/config/app.php" />
       </list>
     </option>
   </component>
@@ -445,34 +454,7 @@
             <path>
               <item name="EdgeHomePlus" type="b2602c69:ProjectViewProjectNode" />
               <item name="EdgeHomePlus" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EdgeHomePlus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EdgeHomePlus" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EdgeHomePlus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EdgeHomePlus" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EdgeHomePlus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EdgeHomePlus" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EdgeHomePlus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EdgeHomePlus" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -723,11 +705,32 @@
       <option name="project" value="LOCAL" />
       <updated>1555128415849</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="update and make ajxa interval">
+      <created>1555599590133</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1555599590133</updated>
+    </task>
+    <task id="LOCAL-00018" summary="update and make ajxa interval">
+      <created>1555599762169</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1555599762169</updated>
+    </task>
+    <task id="LOCAL-00019" summary="update and make ajxa interval">
+      <created>1555599802926</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1555599802926</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="288717000" />
+    <option name="totallyTimeSpent" value="289249000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -740,24 +743,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49861878" visible="true" weight="0.20499243" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49861878" visible="true" weight="0.20499243" />
       <window_info id="Structure" order="1" sideWeight="0.5013812" side_tool="true" weight="0.1720154" />
       <window_info id="npm" order="2" sideWeight="0.5013812" side_tool="true" weight="0.1720154" />
       <window_info id="Favorites" order="3" sideWeight="0.5013812" side_tool="true" weight="0.1720154" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32893" />
-      <window_info anchor="bottom" auto_hide="true" id="Run" order="2" weight="0.23918575" />
+      <window_info anchor="bottom" auto_hide="true" id="Run" order="2" weight="0.23762377" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3994911" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49924356" weight="0.32838285" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32804233" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32673267" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5025674" side_tool="true" weight="0.28968254" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49743262" weight="0.15511551" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49743262" visible="true" weight="0.15511551" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="12" weight="0.32936507" />
       <window_info anchor="bottom" id="RNConsole" order="13" />
       <window_info anchor="bottom" id="TypeScript" order="14" weight="0.32936507" />
@@ -833,13 +835,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/storage/framework/views/0ba824643c672adc9633a36660eba14f58b21c76.php" />
     <entry file="file://$PROJECT_DIR$/storage/framework/views/2e8a5fe366e15427e7b10074efd9deefce742e70.php">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1090,6 +1085,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="42" selection-start-column="42" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
